@@ -14,27 +14,27 @@ def button_click():
     if value_item == 2:
         value_a = user.input_data()
         value_b = user.input_data()
-    ####
+
     print('1 = div; 2 = mult; 3 = sum; 4 = sub')
     print('выберите функцию: ')
     value_model = int(input('выберите значение: '))
     print()
-    ####
-    if value_model == 3: ###
+
+    if value_model == 3: 
         model.init(value_a, value_b)
         result = model.do_it()
         user.view_data(result)
-    ###
+
     if value_model == 1:
         model_div.init(value_a, value_b)
-        result = model_div.do_it() #
+        result = model_div.do_it() 
         user.view_data(result)
-    ###
+
     if value_model == 2:
         model_mult.init(value_a, value_b)
-        result = model_mult.do_it() #
+        result = model_mult.do_it() 
         user.view_data(result)
     if value_model == 4:
         model_sub.init(value_a, value_b)
-        result = model_sub.do_it() #
+        result = model_sub.do_it() 
         user.view_data(result)
